@@ -21,5 +21,10 @@ namespace WindowsFormsApp_Test
         {
 
         }
+
+        private void trackBar_Move_Scroll(object sender, EventArgs e)
+        {
+
+        }
     }
 }

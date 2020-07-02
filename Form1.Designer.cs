@@ -122,6 +122,7 @@
             this.trackBar_Move.Name = "trackBar_Move";
             this.trackBar_Move.Size = new System.Drawing.Size(104, 45);
             this.trackBar_Move.TabIndex = 6;
+            this.trackBar_Move.Scroll += new System.EventHandler(this.trackBar_Move_Scroll);
             // 
             // trackBar_Width
             // 
