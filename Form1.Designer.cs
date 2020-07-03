@@ -68,6 +68,7 @@
             this.button_Up.TabIndex = 0;
             this.button_Up.Text = "↑";
             this.button_Up.UseVisualStyleBackColor = true;
+            this.button_Up.Click += new System.EventHandler(this.button_Up_Click);
             // 
             // button_Left
             // 
@@ -77,6 +78,7 @@
             this.button_Left.TabIndex = 1;
             this.button_Left.Text = "←";
             this.button_Left.UseVisualStyleBackColor = true;
+            this.button_Left.Click += new System.EventHandler(this.button_Left_Click);
             // 
             // button_Down
             // 
@@ -86,6 +88,7 @@
             this.button_Down.TabIndex = 2;
             this.button_Down.Text = "↓";
             this.button_Down.UseVisualStyleBackColor = true;
+            this.button_Down.Click += new System.EventHandler(this.button_Down_Click);
             // 
             // button_Right
             // 
@@ -95,6 +98,7 @@
             this.button_Right.TabIndex = 3;
             this.button_Right.Text = "→";
             this.button_Right.UseVisualStyleBackColor = true;
+            this.button_Right.Click += new System.EventHandler(this.button_Right_Click);
             // 
             // button_ResetPosition
             // 
@@ -104,19 +108,24 @@
             this.button_ResetPosition.TabIndex = 4;
             this.button_ResetPosition.Text = "・";
             this.button_ResetPosition.UseVisualStyleBackColor = true;
+            this.button_ResetPosition.Click += new System.EventHandler(this.button_ResetPosition_Click);
             // 
             // checkBox_DisplayWindow
             // 
             this.checkBox_DisplayWindow.AutoSize = true;
+            this.checkBox_DisplayWindow.Checked = true;
+            this.checkBox_DisplayWindow.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox_DisplayWindow.Location = new System.Drawing.Point(184, 28);
             this.checkBox_DisplayWindow.Name = "checkBox_DisplayWindow";
             this.checkBox_DisplayWindow.Size = new System.Drawing.Size(105, 16);
             this.checkBox_DisplayWindow.TabIndex = 5;
             this.checkBox_DisplayWindow.Text = "子ウインドウ表示";
             this.checkBox_DisplayWindow.UseVisualStyleBackColor = true;
+            this.checkBox_DisplayWindow.CheckedChanged += new System.EventHandler(this.checkBox_DisplayWindow_CheckedChanged);
             // 
             // trackBar_Move
             // 
+            this.trackBar_Move.LargeChange = 2;
             this.trackBar_Move.Location = new System.Drawing.Point(257, 57);
             this.trackBar_Move.Maximum = 100;
             this.trackBar_Move.Name = "trackBar_Move";
@@ -131,6 +140,7 @@
             this.trackBar_Width.Name = "trackBar_Width";
             this.trackBar_Width.Size = new System.Drawing.Size(104, 45);
             this.trackBar_Width.TabIndex = 7;
+            this.trackBar_Width.Scroll += new System.EventHandler(this.trackBar_Width_Scroll);
             // 
             // trackBar_Height
             // 
@@ -139,30 +149,34 @@
             this.trackBar_Height.Name = "trackBar_Height";
             this.trackBar_Height.Size = new System.Drawing.Size(104, 45);
             this.trackBar_Height.TabIndex = 8;
+            this.trackBar_Height.Scroll += new System.EventHandler(this.trackBar_Height_Scroll);
             // 
             // trackBar_R
             // 
             this.trackBar_R.Location = new System.Drawing.Point(257, 225);
-            this.trackBar_R.Maximum = 256;
+            this.trackBar_R.Maximum = 255;
             this.trackBar_R.Name = "trackBar_R";
             this.trackBar_R.Size = new System.Drawing.Size(104, 45);
             this.trackBar_R.TabIndex = 9;
+            this.trackBar_R.Scroll += new System.EventHandler(this.trackBar_R_Scroll);
             // 
             // trackBar_G
             // 
             this.trackBar_G.Location = new System.Drawing.Point(257, 276);
-            this.trackBar_G.Maximum = 256;
+            this.trackBar_G.Maximum = 255;
             this.trackBar_G.Name = "trackBar_G";
             this.trackBar_G.Size = new System.Drawing.Size(104, 45);
             this.trackBar_G.TabIndex = 10;
+            this.trackBar_G.Scroll += new System.EventHandler(this.trackBar_G_Scroll);
             // 
             // trackBar_B
             // 
             this.trackBar_B.Location = new System.Drawing.Point(257, 327);
-            this.trackBar_B.Maximum = 256;
+            this.trackBar_B.Maximum = 255;
             this.trackBar_B.Name = "trackBar_B";
             this.trackBar_B.Size = new System.Drawing.Size(104, 45);
             this.trackBar_B.TabIndex = 11;
+            this.trackBar_B.Scroll += new System.EventHandler(this.trackBar_B_Scroll);
             // 
             // label_MoveValue
             // 
